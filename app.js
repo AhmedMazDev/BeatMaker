@@ -7,7 +7,7 @@ class BeatMaker {
     this.muteSnare = document.querySelector(".mute-snare");
     this.muteHihat = document.querySelector(".mute-hihat");
     this.index = 0;
-    this.iuPlaying = null;
+    this.isPlaying = null;
     this.bpm = 150;
     this.sliderInfo = document.querySelector(".slider-info");
     this.sliderInput = document.querySelector(".slider-input");
