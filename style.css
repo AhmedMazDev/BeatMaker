@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  background: rgb(59, 59, 59);
+  border-style: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.kick-container,
+.snare-container,
+.hihat-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0rem;
+  width: 80%;
+}
+
+.kick-controller,
+.snare-controller,
+.hihat-controller {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 2rem;
+}
+
+.pad {
+  width: 5rem;
+  height: 5rem;
+  background: rgba(109, 24, 220, 0.288);
+  margin: 0rem 1rem;
+}
+
+.pad.active {
+  background: rgba(109, 24, 220, 0.993);
+}
+
+.kick-pads,
+.snare-pads,
+.hihat-pads {
+  display: flex;
+  margin-left: 2rem;
+}
+
+#play {
+  margin-top: 2rem;
+}
+
+.slider {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
+.slider-input {
+  width: 70%;
+  margin: 0rem 2rem;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
